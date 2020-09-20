@@ -22,7 +22,7 @@ public class App2 {
 
         System.out.println(); // sauter une ligne
 
-        Integer myNumber = intCollection.get(4);
+        Integer myNumber = intCollection.get(3);
         System.out.println(myNumber);
 
 
