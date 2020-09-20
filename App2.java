@@ -20,6 +20,11 @@ public class App2 {
                      .filter(e -> e % 2 == 1)
                      .forEach(System.out::println);
 
+        System.out.println(); // sauter une ligne
+
+        Integer myNumber = intCollection.get(3);
+        System.out.println(myNumber);
+
 
 
 
