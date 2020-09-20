@@ -3,6 +3,7 @@ package be.intecbrussel.collections;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.List;
 
 public class App2 {
 
@@ -10,15 +11,12 @@ public class App2 {
 
         Integer[] intArray = new Integer[]{2, 5, 8, 11, 6, 10, 8};
 
-        Collection<Integer> intCollection = new ArrayList<>();
+        List<Integer> intCollection = new ArrayList<>();
 
         intCollection.addAll(Arrays.asList(intArray));
 
-        intCollection.stream()  //Stream<Integer>
-                     .map(e -> String.valueOf(e))  //Stream<String>
-                     .mapToInt(e -> Integer.parseInt(e))  //IntStream
-                     .mapToObj(e -> String.valueOf(e))  //Stream<String>
-                     .mapToInt(e -> Integer.parseInt(e))  //IntStream
+        intCollection.stream()
+                     .mapToInt(e -> e)
                      .filter(e -> e % 2 == 1)
                      .forEach(System.out::println);
 
