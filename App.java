@@ -22,6 +22,7 @@ public class App {
 
         Collection<Integer> list = new ArrayList<>();
         list.add(8);
+        list.add(11);
         intCollection.removeAll(list);
         System.out.println(intCollection);
     }
