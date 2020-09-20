@@ -14,8 +14,9 @@ public class App2 {
 
         intCollection.addAll(Arrays.asList(intArray));
 
-        intCollection.stream()
-                     .mapToInt(e -> e)
+        intCollection.stream()  //Stream<Integer>
+                     .map(e -> String.valueOf(e))  //Stream<String>
+                     .mapToInt(e -> Integer.parseInt(e))  //IntStream
                      .filter(e -> e % 2 == 1)
                      .forEach(System.out::println);
     }
