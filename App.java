@@ -19,5 +19,10 @@ public class App {
         System.out.println(intCollection);
         intCollection.remove(8);
         System.out.println(intCollection);
+
+        Collection<Integer> list = new ArrayList<>();
+        list.add(8);
+        intCollection.removeAll(list);
+        System.out.println(intCollection);
     }
 }
