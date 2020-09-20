@@ -25,5 +25,6 @@ public class App {
         list.add(11);
         intCollection.removeAll(list);
         System.out.println(intCollection);
+        intCollection.forEach(e -> System.out.println(e));
     }
 }
